@@ -73,3 +73,85 @@ if (age > 16){
 } else {
     console.log("Sorry, You're not old enough");
 }
+
+
+
+////////////////////////////////
+// II. Loops
+////////////////////////////////
+
+// 2a. The basics
+
+for (let i= 0; i <= 10; i++){
+    console.log(i);
+};
+
+for (let i= 10; i <= 400; i++){
+    console.log(i)
+};
+
+for (let i= 12; i <= 4000; i+= 3){
+    console.log(i);
+};
+
+
+// 2B. Get Even
+
+for (let i= 1; i <= 100; i++){
+    if (i % 2 === 0){
+        console.log(`${i} is an even number`);
+    } else {
+        console.log(i);
+    }
+}
+
+// 2C. Give me 5
+
+for (let i = 0; i <= 100; i++){
+    if (i % 5 === 0 && i % 3 === 0){
+        console.log(`I found a ${i}. High Five `, ` I found a ${i}. Three is a crowd`);
+    }
+    else if (i % 5 === 0){
+        console.log(`I found a ${i}. High Five`);
+    } else if (i % 3 === 0){
+        console.log(`I found a ${i}. Three is a crowd`);
+    } else {
+        console.log(i);
+    }
+}
+
+// 2D. Savings Account
+
+// Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+ 
+// const deposit = 0
+ let bank_account = 0
+
+for (let deposit = 1; deposit <= 10; deposit++){
+    bank_account = bank_account + deposit;
+}
+
+console.log(`Your account balance after ${10} deposits is $ ${bank_account}`);
+
+let bonus = 0
+
+for (let i = 0; i <= 100; i++){
+     bonus += i * 2;
+
+     
+}
+console.log(`With your bonus you now have ${bonus} in your account`); 
+
+
+// === III. Arrays
+
+//A. Talk about your group
+
+// What are the things in an array called?
+    console.log(`The things is an array are called elements.`);
+// Do Arrays guarantee those things will be in order?
+    console.log(`Yes, arrays have a guarantee order.`);
+// What real-life thing could you model with an array?
+    console.log(`A real-life thing you could model with an array is a roster for football that includes each players name, age, and position `);
+
+    
